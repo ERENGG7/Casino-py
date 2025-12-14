@@ -49,16 +49,21 @@ def generate(rotate):
           set_color()+str(rotate[2])+RESET)
 #compare a b c:
 def compare(rotate,bet,balance):
-    if rotate[0] == rotate[1] and rotate[1] == rotate[2]:
+    if rotate[0] == rotate[1] 
+    and rotate[1] == rotate[2]:
         print(BLUE+"JACKPOT"+RESET)
         print(BLUE+"win: "+RESET, bet * 10)
         balance[0] += bet * 10
         sleep()
-    elif rotate[0] == rotate[1] or rotate[1] == rotate[2] or rotate[0] == rotate[2]:
+
+    elif rotate[0] == rotate[1] 
+    or rotate[1] == rotate[2] 
+    or rotate[0] == rotate[2]:
         print(BLUE+"WIN"+RESET)
         print(BLUE+"win: "+RESET, bet * 2)
         balance[0] += bet * 2
         sleep()
+        
     else:
         print(BLUE+"Try Again."+RESET)
         balance[0] -= bet
