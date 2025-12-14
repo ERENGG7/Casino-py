@@ -42,9 +42,8 @@ def have_bug_for_bet(bet,m):
 
 #generate random numbers: for a b c
 def generate(rotate):
-    rotate.append(random.randint(1, 20))
-    rotate.append(random.randint(1, 20))
-    rotate.append(random.randint(1, 20))
+    for i in range(3):
+         rotate.append(random.randint(1, 20))
     print(set_color()+str(rotate[0])+RESET+' '+
           set_color()+str(rotate[1])+RESET+' '+
           set_color()+str(rotate[2])+RESET)
